@@ -24,7 +24,7 @@ void MainWindow::on_lineEdit_returnPressed()
     try {
     QString txt = ui->lineEdit->text();
     ui->lineEdit->setText(Calculate(txt));
-    ui->listWidget->addItem(txt);
+    ui->listWidget->addItem(txt + " = " + ui->lineEdit->text());
     } catch (int e) {
         qDebug() << "Caught exception number " << e;
         switch (e) {
@@ -174,5 +174,5 @@ void MainWindow::on_pushButton_25_clicked()
 
 void MainWindow::on_listWidget_currentTextChanged(const QString &currentText)
 {
-    ui->lineEdit->setText(currentText);
+    ui->lineEdit->setText(currentText.mid(0, currentText.indexOf(" =")));
 }
