@@ -31,7 +31,7 @@ QString Parser::parse_token() {
     }
 
     static const QString tokens[] =
-    { "+", "-", "*", "^", "/", "sin", "cos", "exp", "tan", "ln", "log", "(", ")" };
+    { "e+", "e-", "+", "-", "*", "^", "/", "sin", "cos", "exp", "tan", "ln", "log", "(", ")" };
     for (auto& t: tokens) {
         if (input.mid(i, t.size()) == t) {
 
@@ -57,11 +57,13 @@ Expression Parser::parse_simple_expression() {
 }
 
 int get_priority(const QString binary_op) {
-    if (binary_op == "+") return 1;
+        if (binary_op == "+") return 1;
         if (binary_op == "-") return 1;
         if (binary_op == "*") return 2;
         if (binary_op == "/") return 2;
         if (binary_op == "^") return 3;
+        if (binary_op == "e+") return 4;
+        if (binary_op == "e-") return 4;
         return 0;
 }
 
@@ -90,6 +92,8 @@ double eval(const Expression& e) {
     case 2: {
         auto a = eval(e.args[0]);
         auto b = eval(e.args[1]);
+        if (e.token == "e+") return QString(QString::number(a) + "e+" + QString::number(b)).toDouble();
+        if (e.token == "e-") return QString(QString::number(a) + "e-" + QString::number(b)).toDouble();
         if (e.token == "+") return a + b;
         if (e.token == "-") return a - b;
         if (e.token == "*") return a * b;
