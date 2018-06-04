@@ -22,6 +22,9 @@
      <layout class="QGridLayout" name="gridLayout">
       <item row="2" column="2">
        <widget class="QPushButton" name="pushButton_3">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>9</string>
         </property>
@@ -29,6 +32,9 @@
       </item>
       <item row="4" column="4">
        <widget class="QPushButton" name="pushButton_19">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>tan()</string>
         </property>
@@ -36,6 +42,9 @@
       </item>
       <item row="1" column="4">
        <widget class="QPushButton" name="pushButton_21">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>exp()</string>
         </property>
@@ -43,6 +52,9 @@
       </item>
       <item row="2" column="4">
        <widget class="QPushButton" name="pushButton_17">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>sin()</string>
         </property>
@@ -50,6 +62,9 @@
       </item>
       <item row="4" column="2">
        <widget class="QPushButton" name="pushButton_9">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>3</string>
         </property>
@@ -57,6 +72,9 @@
       </item>
       <item row="5" column="0">
        <widget class="QPushButton" name="pushButton_10">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>0</string>
         </property>
@@ -80,6 +98,9 @@
       </item>
       <item row="6" column="4">
        <widget class="QPushButton" name="pushButton_26">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>log()</string>
         </property>
@@ -87,6 +108,9 @@
       </item>
       <item row="2" column="3">
        <widget class="QPushButton" name="pushButton_13">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>/</string>
         </property>
@@ -94,6 +118,9 @@
       </item>
       <item row="3" column="3">
        <widget class="QPushButton" name="pushButton_14">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>*</string>
         </property>
@@ -101,6 +128,9 @@
       </item>
       <item row="3" column="4">
        <widget class="QPushButton" name="pushButton_18">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>cos()</string>
         </property>
@@ -108,6 +138,9 @@
       </item>
       <item row="5" column="2">
        <widget class="QPushButton" name="pushButton_12">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>=</string>
         </property>
@@ -115,6 +148,9 @@
       </item>
       <item row="4" column="0">
        <widget class="QPushButton" name="pushButton_7">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>1</string>
         </property>
@@ -122,6 +158,9 @@
       </item>
       <item row="5" column="1">
        <widget class="QPushButton" name="pushButton_11">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>.</string>
         </property>
@@ -129,6 +168,9 @@
       </item>
       <item row="6" column="2">
        <widget class="QPushButton" name="pushButton_23">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>)</string>
         </property>
@@ -136,6 +178,9 @@
       </item>
       <item row="4" column="3">
        <widget class="QPushButton" name="pushButton_15">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>-</string>
         </property>
@@ -143,6 +188,9 @@
       </item>
       <item row="2" column="0">
        <widget class="QPushButton" name="pushButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>7</string>
         </property>
@@ -150,6 +198,9 @@
       </item>
       <item row="3" column="1">
        <widget class="QPushButton" name="pushButton_5">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>5</string>
         </property>
@@ -157,6 +208,9 @@
       </item>
       <item row="6" column="3">
        <widget class="QPushButton" name="pushButton_25">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>C</string>
         </property>
@@ -164,6 +218,9 @@
       </item>
       <item row="5" column="4">
        <widget class="QPushButton" name="pushButton_20">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>ln()</string>
         </property>
@@ -171,6 +228,9 @@
       </item>
       <item row="6" column="0">
        <widget class="QPushButton" name="pushButton_24">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>^</string>
         </property>
@@ -178,6 +238,9 @@
       </item>
       <item row="4" column="1">
        <widget class="QPushButton" name="pushButton_8">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>2</string>
         </property>
@@ -185,6 +248,9 @@
       </item>
       <item row="2" column="1">
        <widget class="QPushButton" name="pushButton_2">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>8</string>
         </property>
@@ -192,6 +258,9 @@
       </item>
       <item row="5" column="3">
        <widget class="QPushButton" name="pushButton_16">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>+</string>
         </property>
@@ -199,6 +268,9 @@
       </item>
       <item row="3" column="0">
        <widget class="QPushButton" name="pushButton_4">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>4</string>
         </property>
@@ -206,6 +278,9 @@
       </item>
       <item row="3" column="2">
        <widget class="QPushButton" name="pushButton_6">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>6</string>
         </property>
@@ -213,13 +288,16 @@
       </item>
       <item row="6" column="1">
        <widget class="QPushButton" name="pushButton_22">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string>(</string>
         </property>
        </widget>
       </item>
       <item row="0" column="0" colspan="5">
-       <widget class="QListView" name="listView"/>
+       <widget class="QListWidget" name="listWidget"/>
       </item>
      </layout>
     </item>
@@ -227,6 +305,36 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>pushButton_10</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_11</tabstop>
+  <tabstop>pushButton_13</tabstop>
+  <tabstop>pushButton_15</tabstop>
+  <tabstop>pushButton_14</tabstop>
+  <tabstop>pushButton_16</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>pushButton_22</tabstop>
+  <tabstop>pushButton_23</tabstop>
+  <tabstop>pushButton_24</tabstop>
+  <tabstop>pushButton_25</tabstop>
+  <tabstop>pushButton_26</tabstop>
+  <tabstop>pushButton_20</tabstop>
+  <tabstop>pushButton_19</tabstop>
+  <tabstop>pushButton_18</tabstop>
+  <tabstop>pushButton_17</tabstop>
+  <tabstop>pushButton_21</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

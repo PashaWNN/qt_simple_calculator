@@ -29,7 +29,7 @@ private slots:
 
     void on_pushButton_4_clicked();
 
-    void on_pushButton_5_clicked(bool checked);
+//    void on_pushButton_5_clicked(bool checked);
 
     void on_pushButton_5_clicked();
 
@@ -72,6 +72,8 @@ private slots:
     void on_pushButton_26_clicked();
 
     void on_pushButton_25_clicked();
+
+    void on_listWidget_currentTextChanged(const QString &currentText);
 
 private:
     Ui::MainWindow *ui;

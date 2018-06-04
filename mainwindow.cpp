@@ -16,17 +16,35 @@ MainWindow::~MainWindow()
 
 void MainWindow::lineEdit_add(QString s)
 {
-    ui->lineEdit->setText(ui->lineEdit->text()+s);
+    ui->lineEdit->setText(add_symbol(ui->lineEdit->text(), s));
 }
 
 void MainWindow::on_lineEdit_returnPressed()
 {
-    Calculate(ui->lineEdit->text());
+    try {
+    QString txt = ui->lineEdit->text();
+    ui->lineEdit->setText(Calculate(txt));
+    ui->listWidget->addItem(txt);
+    } catch (int e) {
+        qDebug() << "Caught exception number " << e;
+        switch (e) {
+        case 10:
+            ui->lineEdit->setText("Неправильный ввод!");
+        case 20:
+            ui->lineEdit->setText("Ожидался символ ')'!");
+        case 30:
+            ui->lineEdit->setText("Неизвестный бинарный оператор!");
+        case 40:
+            ui->lineEdit->setText("Неизвестный унарный оператор!");
+        case 50:
+            ui->lineEdit->setText("Неизвестный тип выражения!");
+        }
+    }
 }
 
 void MainWindow::on_pushButton_12_clicked()
 {
-    Calculate(ui->lineEdit->text());
+    on_lineEdit_returnPressed();
 }
 
 void MainWindow::on_pushButton_clicked()
@@ -152,4 +170,9 @@ void MainWindow::on_pushButton_26_clicked()
 void MainWindow::on_pushButton_25_clicked()
 {
     ui->lineEdit->setText("");
+}
+
+void MainWindow::on_listWidget_currentTextChanged(const QString &currentText)
+{
+    ui->lineEdit->setText(currentText);
 }
